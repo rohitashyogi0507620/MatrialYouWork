@@ -1,6 +1,7 @@
 package com.yogify.matrialyou;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.widget.Toast;
 
 import androidx.fragment.app.FragmentManager;
@@ -22,6 +23,12 @@ public class MatrialYou {
             @Override
             public void onPositiveButtonClick(Object selection) {
                 Toast.makeText(context, selection.toString(), Toast.LENGTH_SHORT).show();
+            }
+        });
+        datePicker.addOnCancelListener(new DialogInterface.OnCancelListener() {
+            @Override
+            public void onCancel(DialogInterface dialogInterface) {
+                Toast.makeText(context, "This Is Dynamic Bro", Toast.LENGTH_SHORT).show();
             }
         });
 
