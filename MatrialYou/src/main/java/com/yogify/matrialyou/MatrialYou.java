@@ -2,6 +2,7 @@ package com.yogify.matrialyou;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.fragment.app.FragmentManager;
@@ -31,6 +32,13 @@ public class MatrialYou {
                 Toast.makeText(context, "This Is Dynamic Bro", Toast.LENGTH_SHORT).show();
             }
         });
+        datePicker.addOnNegativeButtonClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               Toast.makeText(context, "This Is Dynamic Bro", Toast.LENGTH_SHORT).show();
+
+           }
+       });
 
     }
 

@@ -6,22 +6,36 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:onClick="fun_showDatePicker"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Show Date Picker"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="289dp"
-        tools:ignore="MissingConstraints"></Button>
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
 
-    <Button
-        android:onClick="fun_showDateRangePicker"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Show Date Range Picker"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="365dp"
-        tools:ignore="MissingConstraints"></Button>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Library Project "
+            android:textSize="25dp"
+            android:textStyle="bold"></TextView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="fun_showDatePicker"
+            android:text="Show Date Picker"
+            tools:ignore="MissingConstraints"></Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="fun_showDateRangePicker"
+            android:text="Show Date Range Picker"
+            tools:ignore="MissingConstraints"></Button>
+    </LinearLayout>
+    >
 
 </androidx.constraintlayout.widget.ConstraintLayout>
