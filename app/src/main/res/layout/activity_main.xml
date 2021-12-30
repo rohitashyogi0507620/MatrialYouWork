@@ -35,7 +35,18 @@
             android:onClick="fun_showDateRangePicker"
             android:text="Show Date Range Picker"
             tools:ignore="MissingConstraints"></Button>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <RadioButton
+                style=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ></RadioButton>
+        </RadioGroup>
     </LinearLayout>
-    >
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
