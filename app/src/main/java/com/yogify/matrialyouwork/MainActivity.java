@@ -33,4 +33,8 @@ public class MainActivity extends AppCompatActivity {
     public void fun_startmodule(View view) {
 
     }
+
+    public void fun_startcomponentActivity(View view) {
+        MatrialYou.StartComponentActivity(getApplicationContext());
+    }
 }

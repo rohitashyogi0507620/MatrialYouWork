@@ -43,6 +43,20 @@
             android:text="Start Module"
             tools:ignore="MissingConstraints"></Button>
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="fun_startcomponentActivity"
+            android:text="Start Component Activity"
+            tools:ignore="MissingConstraints"></Button>
+
+        <com.yogify.matrialyou.CustomComponent.HeadingTextView
+            android:layout_width="match_parent"
+            android:text="Hello Bro"
+            android:layout_height="wrap_content">
+
+        </com.yogify.matrialyou.CustomComponent.HeadingTextView>
+
     </LinearLayout>
 
 

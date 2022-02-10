@@ -2,6 +2,7 @@ package com.yogify.matrialyou;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.view.View;
 import android.widget.Toast;
 
@@ -57,6 +58,11 @@ public class MatrialYou {
 
     }
 
+    static public void StartComponentActivity(Context context) {
+       Intent intent= new Intent(context,ComponentActivity.class);
+       intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        context.startActivity(intent);
+    }
 
 
 }
