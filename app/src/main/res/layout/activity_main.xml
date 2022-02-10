@@ -13,12 +13,13 @@
         android:orientation="vertical">
 
         <TextView
+            style="@style/TextStyleTopHeading"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:gravity="center"
             android:padding="10dp"
-            android:text="Library Project "
+            android:text="@string/ThisisText"
             android:textSize="25dp"
             android:textStyle="bold"></TextView>
 
@@ -50,13 +51,11 @@
             android:text="Start Component Activity"
             tools:ignore="MissingConstraints"></Button>
 
-        <com.yogify.matrialyou.CustomComponent.HeadingTextView
+        <TextView
             android:layout_width="match_parent"
             android:text="Hello Bro"
             android:layout_height="wrap_content">
-
-        </com.yogify.matrialyou.CustomComponent.HeadingTextView>
-
+        </TextView>
     </LinearLayout>
 
 

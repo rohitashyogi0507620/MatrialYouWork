@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="OurProducts_textsize">20dp</dimen>
+    <dimen name="bnt_8dp_padding">8dp</dimen>
+    <dimen name="border_1dp">1dp</dimen>
+    <dimen name="editext_txt_size">16sp</dimen>
+    <dimen name="margin_15dp">15dp</dimen>
+
+</resources>

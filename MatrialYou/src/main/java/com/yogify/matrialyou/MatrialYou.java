@@ -4,12 +4,14 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.fragment.app.FragmentManager;
 
 import com.google.android.material.datepicker.MaterialDatePicker;
 import com.google.android.material.datepicker.MaterialPickerOnPositiveButtonClickListener;
+import com.yogify.matrialyou.CustomComponent.HeadingTextView;
 
 public class MatrialYou {
 
@@ -59,9 +61,13 @@ public class MatrialYou {
     }
 
     static public void StartComponentActivity(Context context) {
-       Intent intent= new Intent(context,ComponentActivity.class);
-       intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        Intent intent = new Intent(context, ComponentActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         context.startActivity(intent);
+    }
+
+    static public  int GetHeadingStyle() {
+      return R.style.TextStyleTopHeading;
     }
 
 

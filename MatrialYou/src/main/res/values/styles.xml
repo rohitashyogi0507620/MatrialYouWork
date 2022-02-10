@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+
+
+<!--    <style name="TextStyleTopHeading">-->
+<!--        <item name="android:textSize">@dimen/OurProducts_textsize</item>-->
+<!--        <item name="android:textColor">@color/colortext_top_products_heading</item>-->
+<!--        <item name="android:fontFamily">@font/montserrat_bold</item>-->
+<!--    </style>-->
+
+    <style name="EditTextStyleOutline" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="shapeAppearanceOverlay">
+            @style/ShapeAppearanceOverlay.MyApp.TextInputLayout.Rounded
+        </item>
+        <item name="boxStrokeWidth">@dimen/border_1dp</item>
+        <item name="boxStrokeColor">@color/color_border_line_edittext</item>
+        <item name="hintTextColor">@color/hint_color_editext</item>
+
+    </style>
+
+    <style name="ShapeAppearanceOverlay.MyApp.TextInputLayout.Rounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/bnt_8dp_padding</item>
+    </style>
+
+
+    <style name="EditTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:padding">@dimen/margin_15dp</item>
+        <item name="cornerRadius">@dimen/bnt_8dp_padding</item>
+        <item name="android:textColor">@color/color_edittext_color</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:textSize">@dimen/editext_txt_size</item>
+
+
+    </style>
+</resources>

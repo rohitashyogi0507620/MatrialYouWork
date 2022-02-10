@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colortext_top_products_heading">#151F4C</color>
+    <color name="color_edittext_color">#172B4D</color>
+    <color name="color_otp_item_selected">#052576</color>
+    <color name="color_edittext_border">#666B80</color>
+    <color name="hint_color_editext">#716C6B</color>
+
+</resources>

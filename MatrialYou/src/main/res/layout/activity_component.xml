@@ -4,11 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ComponentActivity">
 
+    <com.yogify.matrialyou.CustomComponent.HeadingTextViewLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/margin_15dp"
+        android:layout_height="wrap_content">
+
+        <com.yogify.matrialyou.CustomComponent.EditTextInput
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Name"></com.yogify.matrialyou.CustomComponent.EditTextInput>
+
+    </com.yogify.matrialyou.CustomComponent.HeadingTextViewLayout>
+
     <com.yogify.matrialyou.CustomComponent.HeadingTextView
+        style="@style/TextStyleTopHeading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello Bro"></com.yogify.matrialyou.CustomComponent.HeadingTextView>
+        android:text="@string/ThisisText"></com.yogify.matrialyou.CustomComponent.HeadingTextView>
+
 
 </LinearLayout>
