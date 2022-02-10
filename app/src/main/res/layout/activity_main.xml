@@ -36,15 +36,35 @@
             android:text="Show Date Range Picker"
             tools:ignore="MissingConstraints"></Button>
 
-        <RadioGroup
+        <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            >
+            android:onClick="fun_startmodule"
+            android:text="Start Module"
+            tools:ignore="MissingConstraints"></Button>
+
+        <RadioGroup
+            android:checkedButton="@id/radio_female"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_10dp">
+
             <RadioButton
-                style=""
-                android:layout_width="match_parent"
+                android:id="@+id/radio_male"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                ></RadioButton>
+                android:layout_margin="@dimen/margin_5dp"
+                android:layout_weight="1"
+                android:text="Male"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/radio_female"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5dp"
+                android:layout_weight="1"
+                android:text="FeMale"></RadioButton>
         </RadioGroup>
     </LinearLayout>
 

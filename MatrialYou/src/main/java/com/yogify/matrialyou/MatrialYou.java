@@ -12,7 +12,7 @@ import com.google.android.material.datepicker.MaterialPickerOnPositiveButtonClic
 
 public class MatrialYou {
 
-   static public void ShowMatrialDatePicker(Context context, FragmentManager fragmentManager) {
+    static public void ShowMatrialDatePicker(Context context, FragmentManager fragmentManager) {
         MaterialDatePicker datePicker =
                 MaterialDatePicker.Builder.datePicker()
                         .setTitleText("Select date")
@@ -33,16 +33,16 @@ public class MatrialYou {
             }
         });
         datePicker.addOnNegativeButtonClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View view) {
-               Toast.makeText(context, "This Is Dynamic Bro", Toast.LENGTH_SHORT).show();
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(context, "This Is Dynamic Bro", Toast.LENGTH_SHORT).show();
 
-           }
-       });
+            }
+        });
 
     }
 
-  static  public void MatirialARangPicker(Context context, FragmentManager fragmentManager) {
+    static public void MatirialARangPicker(Context context, FragmentManager fragmentManager) {
         MaterialDatePicker dateRangePicker =
                 MaterialDatePicker.Builder.dateRangePicker()
                         .setTitleText("Select dates")
@@ -55,6 +55,11 @@ public class MatrialYou {
             }
         });
 
+    }
+
+    static public int GetRadioButtonStyle() {
+        int radiostyle = R.style.RadioButtonStyle;
+        return radiostyle;
     }
 
 }
