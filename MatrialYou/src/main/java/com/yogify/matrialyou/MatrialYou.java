@@ -57,9 +57,6 @@ public class MatrialYou {
 
     }
 
-    static public int GetRadioButtonStyle() {
-        int radiostyle = R.style.RadioButtonStyle;
-        return radiostyle;
-    }
+
 
 }
