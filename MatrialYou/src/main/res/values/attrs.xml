@@ -8,4 +8,12 @@
     </style>
     <string name="ThisisText">Hey Bro This Is Public String File</string>
 
+    <declare-styleable name="PieChart">
+        <attr name="showText" format="boolean" />
+        <attr name="labelPosition" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+    </declare-styleable>
+
 </resources>

@@ -8,17 +8,25 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.yogify.matrialyou.CustomComponent.PieChart;
 import com.yogify.matrialyou.MatrialYou;
 
 
 public class MainActivity extends AppCompatActivity {
 
+    PieChart pieChart;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        pieChart = findViewById(R.id.piechart);
+        if (pieChart.isButtonActive()){
+            pieChart.setText("Hello Button is Active");
+        }else {
+            pieChart.setText("Hello Button is not Active");
 
-
+        }
 
     }
 
@@ -33,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void fun_startmodule(View view) {
-
+       pieChart.setButtonActive(true);
     }
 
     public void fun_startcomponentActivity(View view) {

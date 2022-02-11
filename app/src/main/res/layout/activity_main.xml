@@ -12,6 +12,14 @@
         android:gravity="center_vertical"
         android:orientation="vertical">
 
+        <com.yogify.matrialyou.CustomComponent.PieChart
+            android:id="@+id/piechart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:showText="false"
+            app:labelPosition="left"
+            ></com.yogify.matrialyou.CustomComponent.PieChart>
+
         <TextView
             style="@style/TextStyleTopHeading"
             android:layout_width="match_parent"
