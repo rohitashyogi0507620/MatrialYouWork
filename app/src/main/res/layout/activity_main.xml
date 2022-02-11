@@ -16,9 +16,8 @@
             android:id="@+id/piechart"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:showText="false"
             app:labelPosition="left"
-            ></com.yogify.matrialyou.CustomComponent.PieChart>
+            app:showText="false"></com.yogify.matrialyou.CustomComponent.PieChart>
 
         <TextView
             style="@style/TextStyleTopHeading"
@@ -59,11 +58,19 @@
             android:text="Start Component Activity"
             tools:ignore="MissingConstraints"></Button>
 
-        <TextView
+        <com.yogify.matrialyou.CustomComponent.EditTextInput
+            style="@style/EditTextStyleOutline"
             android:layout_width="match_parent"
-            android:text="Hello Bro"
             android:layout_height="wrap_content">
-        </TextView>
+
+            <com.yogify.matrialyou.CustomComponent.EmailEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email Id *">
+            </com.yogify.matrialyou.CustomComponent.EmailEditText>
+
+        </com.yogify.matrialyou.CustomComponent.EditTextInput>
+
     </LinearLayout>
 
 

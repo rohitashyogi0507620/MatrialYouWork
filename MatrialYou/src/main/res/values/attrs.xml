@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="TextStyleTopHeading">
-        <item name="android:textSize">@dimen/OurProducts_textsize</item>
-        <item name="android:textColor">@color/colortext_top_products_heading</item>
-        <item name="android:fontFamily">@font/montserrat_bold</item>
-    </style>
+
     <string name="ThisisText">Hey Bro This Is Public String File</string>
 
     <declare-styleable name="PieChart">

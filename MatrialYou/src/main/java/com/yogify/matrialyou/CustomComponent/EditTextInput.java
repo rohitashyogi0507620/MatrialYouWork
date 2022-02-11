@@ -10,16 +10,14 @@ import androidx.annotation.Nullable;
 
 import android.widget.LinearLayout;
 
+import com.google.android.material.textfield.TextInputLayout;
 import com.yogify.matrialyou.R;
 
-public class EditTextInput extends androidx.appcompat.widget.AppCompatEditText {
-
+public class  EditTextInput extends com.google.android.material.textfield.TextInputLayout {
 
     public EditTextInput(@NonNull Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
-        this.setTextAppearance(context, R.style.EditTextStyle);
-
+        this.setHelperTextTextAppearance(R.style.EditTextStyleOutline);
+        this.setPadding(15,0,15,0);
     }
-
-
 }

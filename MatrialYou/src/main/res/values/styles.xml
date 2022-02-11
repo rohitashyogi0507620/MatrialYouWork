@@ -2,11 +2,11 @@
 <resources >
 
 
-<!--    <style name="TextStyleTopHeading">-->
-<!--        <item name="android:textSize">@dimen/OurProducts_textsize</item>-->
-<!--        <item name="android:textColor">@color/colortext_top_products_heading</item>-->
-<!--        <item name="android:fontFamily">@font/montserrat_bold</item>-->
-<!--    </style>-->
+    <style name="TextStyleTopHeading">
+        <item name="android:textSize">@dimen/OurProducts_textsize</item>
+        <item name="android:textColor">@color/colortext_top_products_heading</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+    </style>
 
     <style name="EditTextStyleOutline" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <item name="shapeAppearanceOverlay">
@@ -23,14 +23,13 @@
         <item name="cornerSize">@dimen/bnt_8dp_padding</item>
     </style>
 
-
-    <style name="EditTextStyle" parent="TextAppearance.AppCompat">
+    <style name="EditTextStyleNormal" parent="TextAppearance.AppCompat">
         <item name="android:padding">@dimen/margin_15dp</item>
         <item name="cornerRadius">@dimen/bnt_8dp_padding</item>
         <item name="android:textColor">@color/color_edittext_color</item>
         <item name="android:fontFamily">@font/montserrat_regular</item>
         <item name="android:textSize">@dimen/editext_txt_size</item>
-
-
     </style>
+
+
 </resources>
