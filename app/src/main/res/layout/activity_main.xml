@@ -59,12 +59,15 @@
             tools:ignore="MissingConstraints"></Button>
 
         <com.yogify.matrialyou.CustomComponent.EditTextInput
+            app:counterEnabled="true"
             style="@style/EditTextStyleOutline"
+            app:counterMaxLength="10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <com.yogify.matrialyou.CustomComponent.EmailEditText
                 android:layout_width="match_parent"
+                android:imeOptions="actionGo"
                 android:layout_height="wrap_content"
                 android:hint="Email Id *">
             </com.yogify.matrialyou.CustomComponent.EmailEditText>
