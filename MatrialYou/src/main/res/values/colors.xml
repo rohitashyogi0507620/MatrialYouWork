@@ -6,4 +6,26 @@
     <color name="color_edittext_border">#666B80</color>
     <color name="hint_color_editext">#716C6B</color>
 
+
+    <color name="textColorHeading">#151F4C</color>
+    <color name="textColorSubHeading">#252C63</color>
+    <color name="colorDesignArrow">#252C63</color>
+    <color name="colorThemeBackground">#FFFFFF</color>
+    <color name="color_radio_button_border_unselected">#5E6C84</color>
+    <color name="radiobutton_textcolor">#253858</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorOnPrimary">#252C63</color>
+    <color name="colorPrimary">#00B8CD</color>
+
+    <color name="colorSecondary">#f89a25</color>
+    <color name="colorOnSecondary">#f3fafb</color>
+
+    <color name="colorTheme">#FFFFFF</color>
+    <color name="colorButtonDisable">#EFEFEF</color>
+    <color name="colorButtonEnable">#00B8CD</color>
+
+
 </resources>

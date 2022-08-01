@@ -6,75 +6,100 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center_vertical"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        tools:ignore="MissingConstraints">
 
-        <com.yogify.matrialyou.CustomComponent.PieChart
-            android:id="@+id/piechart"
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:labelPosition="left"
-            app:showText="false"></com.yogify.matrialyou.CustomComponent.PieChart>
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
 
-        <TextView
-            style="@style/TextStyleTopHeading"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:gravity="center"
-            android:padding="10dp"
-            android:text="@string/ThisisText"
-            android:textSize="25dp"
-            android:textStyle="bold"></TextView>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="fun_showDatePicker"
-            android:text="Show Date Picker"
-            tools:ignore="MissingConstraints"></Button>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="fun_showDateRangePicker"
-            android:text="Show Date Range Picker"
-            tools:ignore="MissingConstraints"></Button>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="fun_startmodule"
-            android:text="Start Module"
-            tools:ignore="MissingConstraints"></Button>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="fun_startcomponentActivity"
-            android:text="Start Component Activity"
-            tools:ignore="MissingConstraints"></Button>
-
-        <com.yogify.matrialyou.CustomComponent.EditTextInput
-            app:counterEnabled="true"
-            style="@style/EditTextStyleOutline"
-            app:counterMaxLength="10"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <com.yogify.matrialyou.CustomComponent.EmailEditText
+            <com.yogify.matrialyou.CustomComponent.PieChart
+                android:id="@+id/piechart"
                 android:layout_width="match_parent"
-                android:imeOptions="actionGo"
                 android:layout_height="wrap_content"
-                android:hint="Email Id *">
-            </com.yogify.matrialyou.CustomComponent.EmailEditText>
+                app:labelPosition="left"
+                app:showText="false"></com.yogify.matrialyou.CustomComponent.PieChart>
 
-        </com.yogify.matrialyou.CustomComponent.EditTextInput>
+            <TextView
+                style="@style/TextStyleTopHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/ThisisText"
+                android:textSize="25dp"
+                android:textStyle="bold"></TextView>
 
-    </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="fun_showDatePicker"
+                android:text="Show Date Picker"
+                tools:ignore="MissingConstraints"></Button>
 
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="fun_showDateRangePicker"
+                android:text="Show Date Range Picker"
+                tools:ignore="MissingConstraints"></Button>
 
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="fun_startmodule"
+                android:text="Start Module"
+                tools:ignore="MissingConstraints"></Button>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="fun_startcomponentActivity"
+                android:text="Start Component Activity"
+                tools:ignore="MissingConstraints"></Button>
+
+            <com.yogify.matrialyou.CustomComponent.EditTextInput
+                style="@style/EditTextStyleOutline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.yogify.matrialyou.CustomComponent.EmailEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email Id *">
+
+                </com.yogify.matrialyou.CustomComponent.EmailEditText>
+
+            </com.yogify.matrialyou.CustomComponent.EditTextInput>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal">
+
+                <com.yogify.matrialyou.CustomComponent.RadioButtonGender
+                    style="@style/RadioButton_Gender_Style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Male"></com.yogify.matrialyou.CustomComponent.RadioButtonGender>
+
+                <com.yogify.matrialyou.CustomComponent.RadioButtonGender
+                    style="@style/RadioButton_Gender_Style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Male"></com.yogify.matrialyou.CustomComponent.RadioButtonGender>
+            </RadioGroup>
+        </LinearLayout>
+
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

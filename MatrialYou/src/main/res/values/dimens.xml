@@ -5,5 +5,10 @@
     <dimen name="border_1dp">1dp</dimen>
     <dimen name="editext_txt_size">16sp</dimen>
     <dimen name="margin_15dp">15dp</dimen>
+    <dimen name="margin_10dp">10dp</dimen>
+    <dimen name="border_2dp">2dp</dimen>
+    <dimen name="margin_5dp">5dp</dimen>
 
+    <dimen name="margin_12dp">12dp</dimen>
+    <dimen name="radiobutton_text_size">16sp</dimen>
 </resources>
